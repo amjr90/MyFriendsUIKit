@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D98472B276F82A80056629F /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D98472A276F82A80056629F /* Domain.framework */; };
+		2D98472C276F82A80056629F /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2D98472A276F82A80056629F /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2D98472F276F82AB0056629F /* Infrastructure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D98472E276F82AB0056629F /* Infrastructure.framework */; };
+		2D984730276F82AB0056629F /* Infrastructure.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2D98472E276F82AB0056629F /* Infrastructure.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2DFB5D48276F7C05004BF15B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFB5D47276F7C05004BF15B /* AppDelegate.swift */; };
 		2DFB5D4A276F7C05004BF15B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFB5D49276F7C05004BF15B /* SceneDelegate.swift */; };
 		2DFB5D4C276F7C05004BF15B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFB5D4B276F7C05004BF15B /* ViewController.swift */; };
@@ -14,7 +18,24 @@
 		2DFB5D54276F7C07004BF15B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DFB5D52276F7C07004BF15B /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		2D98472D276F82A80056629F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2D98472C276F82A80056629F /* Domain.framework in Embed Frameworks */,
+				2D984730276F82AB0056629F /* Infrastructure.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		2D98472A276F82A80056629F /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D98472E276F82AB0056629F /* Infrastructure.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Infrastructure.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DFB5D44276F7C05004BF15B /* MyFriendsUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFriendsUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DFB5D47276F7C05004BF15B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2DFB5D49276F7C05004BF15B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -29,17 +50,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D98472B276F82A80056629F /* Domain.framework in Frameworks */,
+				2D98472F276F82AB0056629F /* Infrastructure.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D984729276F82A70056629F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2D98472E276F82AB0056629F /* Infrastructure.framework */,
+				2D98472A276F82A80056629F /* Domain.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2DFB5D3B276F7C04004BF15B = {
 			isa = PBXGroup;
 			children = (
 				2DFB5D46276F7C05004BF15B /* MyFriendsUIKit */,
 				2DFB5D45276F7C05004BF15B /* Products */,
+				2D984729276F82A70056629F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +107,7 @@
 				2DFB5D40276F7C04004BF15B /* Sources */,
 				2DFB5D41276F7C04004BF15B /* Frameworks */,
 				2DFB5D42276F7C04004BF15B /* Resources */,
+				2D98472D276F82A80056629F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
